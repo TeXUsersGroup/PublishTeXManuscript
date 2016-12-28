@@ -1,0 +1,72 @@
+\documentclass{article}
+\usepackage{natbib}
+\usepackage[colorlinks]{hyperref}
+\begin{document}
+\title{So, you decided to publish your \TeX\ manuscript?  How to talk
+  to the publisher}
+\author{Boris Veytsman\thanks{Copyright 2016, \TeX\ Users Group,
+    available under Creative Commons Attribution License (CC-BY)}}
+\date{December 2016}
+\maketitle
+
+\section{Introduction}
+\label{sec:intro}
+
+Some time ago Dominik Wujastyk asked an interesting question: how do
+we talk to a (possibly) \TeX-ignorant publisher if we want her or him
+to accept a manuscript in \TeX?  A horror story~\cite{Verna13} shows
+that this is an important problem.
+
+This lead to the creation of this document.  Here we try to describe
+the common problems with \TeX-averse publishers, arguments you can
+use, etc.
+
+
+Please feel free to add your own advice (and your name to the authors
+list!) to this file.  
+
+While many people user \LaTeX\ for document preparation, our
+discussion is not limited to it: we would be glad to hear from Con\TeX
+t people and the users of other formats.  
+
+
+\section{Manuscript preparation}
+\label{sec:preparation}
+
+Before you even started to discuss your manuscript with a publisher,
+try looking at it from the publisher's point of view.  For many
+publishers \TeX\ manuscripts have the reputation of being very
+difficult to work with.  One of the main reasons is the versatility of
+\TeX, and the abuse of this versatility by the authors.  Many authors
+tend to define their own macros, and some just copy and paste page
+after page of definitions from their own papers, colleagues' paper and
+every \TeX-related Web page on the Internet.  Even if the publisher
+uses \TeX\ for her own back office production (more on this later),
+the manuscripts of this style are almost not usable for her: the
+macros may conflict with the publisher's macros or make it impossible
+to put the manuscript in the house style.  The same with authors'
+packages: they may add too many difficulties to the overworked
+technical editors.  In some cases the publisher is forced to throw
+\TeX\ file away and completely rekey the manuscript from the
+PDF---which is very expensive.
+
+Thus if you want your publisher to love your \TeX\ manuscript:
+\begin{enumerate}
+\item Find out whether the publisher has ``official'' \TeX\ style.  If
+  yes, use it.
+\item Beyond this style, try not to use any additional packages or fonts.
+\item Convert your own macros to their meaning: sometimes you need a
+  smart editor program to do this.  \marginpar{TODO: List of such
+    programs}. 
+\end{enumerate}
+
+\section{Some publishers' arguments}
+\label{sec:arguments}
+
+In this section we discuss some typical publishers' arguments and your
+possible answers.  
+
+\bibliographystyle{plainnat}
+\bibliography{PublishTeXManuscript}
+
+\end{document}
