@@ -41,14 +41,14 @@ difficult to work with.  One of the main reasons is the versatility of
 tend to define their own macros, and some just copy and paste page
 after page of definitions from their own papers, colleagues' paper and
 every \TeX-related Web page on the Internet.  Even if the publisher
-uses \TeX\ for her own back office production (more on this later),
-the manuscripts of this style are almost not usable for her: the
-macros may conflict with the publisher's macros or make it impossible
-to put the manuscript in the house style.  The same with authors'
-packages: they may add too many difficulties to the overworked
-technical editors.  In some cases the publisher is forced to throw
-\TeX\ file away and completely rekey the manuscript from the
-PDF---which is very expensive.
+uses \TeX\ for her own back office production (more on this in
+Section~\ref{sec:backoffice}), the manuscripts of this style are
+almost not usable for her: the macros may conflict with the
+publisher's macros or make it impossible to put the manuscript in the
+house style.  The same with authors' packages: they may add too many
+difficulties to the overworked technical editors.  In some cases the
+publisher is forced to throw \TeX\ file away and completely re-key the
+manuscript from the PDF---which is very expensive.
 
 Thus if you want your publisher to love your \TeX\ manuscript:
 \begin{enumerate}
@@ -60,11 +60,102 @@ Thus if you want your publisher to love your \TeX\ manuscript:
     programs}. 
 \end{enumerate}
 
+You should also prepare a version for reviewers: with generous spacing
+and margins for their comments.
+
+\section{Advantages of a \TeX-formatted manuscript}
+\label{sec:advantages}
+
+In this section we list some advantages of a manuscript formatted with
+\TeX\ from the point of view of a publisher.
+
+\subsection{Integrity}
+\label{sec:integirty}
+
+A manuscript formatted in a word processor may look differently in
+different versions of the word processor, or on different platforms.
+This is especially true for such objects as equations, special symbols
+etc.  While Unicode solves \emph{some} of these problems, still it is
+quite common to see a word processor file with garbled equations or
+text.
+
+A manuscript in \TeX\ is guaranteed to be the same on the author's
+computer and on the publisher's or reviewer's one.
+
+\subsection{Postprocessing}
+\label{sec:postprocessing}
+
+Being a structured text format, \TeX\ allows easy postprocessing
+options for metadata extraction, XML translation, archiving etc.  The
+representative of the publisher may not even know that her processing
+division would be happy to accept \TeX\ files.  Do some research about
+the methods used by the people there.  
+
+\subsection{Backoffice typesetting}
+\label{sec:backoffice}
+
+Many publishers outsource the actual typesetting to companies, that
+use \TeX\ internally.  They convert word processor manuscripts to
+\TeX\ (either using automatic tools or re-keying) and typeset them in
+\TeX.  A manuscript already in \TeX\ might save time and effort, and
+introduce less errors.
+
 \section{Some publishers' arguments}
 \label{sec:arguments}
 
-In this section we discuss some typical publishers' arguments and your
-possible answers.  
+In this section we discuss some typical publishers' arguments against
+\TeX\ and your possible answers.
+
+
+\subsection{My reviewers prefer word processors}
+\label{sec:reviewers}
+
+Actually many peer reviewers use \TeX\ themselves and would prefer a
+\TeX\ file.  Even those who do not would be glad to have a nicely
+typeset PDF file suitable for review (see
+Section~\ref{sec:preparation}).  
+
+\subsection{My copy editors prefer word processors}
+\label{sec:copy-editors}
+
+This is a very strong argument.  If your publishers' copy editors
+refuse to take a manuscript in \TeX\ or PDF, there is little you can
+do.  
+
+You may try to convert your file to a word processor format, and then,
+after copy editing, back to \TeX, but this is cumbersome and
+error-prone.
+
+Still, there are some possibilities.  In many cases your publisher's
+representative just does not know actual copy editors employed by the
+publisher, and is not aware that they \emph{can} work with \TeX\ or
+PDF.  Doing your own research may give you some insight in the real
+situation and help to convince the representative.
+
+If your publisher outsources copy editing, you may suggest editors
+willing to work with \TeX.  The \TeX\ consultants list maintained by
+the \TeX\ Users Group at \url{http://www.tug.org/consultants.html} is
+a good place to start.
+
+\subsection{My typesetters prefer word processors}
+\label{sec:typesetters}
+
+In many cases this statement is just not correct (see also
+Section~\ref{sec:backoffice}).  Again, you'd better come to the
+publisher after doing you own research.
+
+\section{\TeX-friendly publishers}
+\label{sec:tex-aware-publishers}
+
+In this section we list the publishers which accept manuscripts in
+\TeX. \marginpar{\raggedright TODO: expand the list}
+\begin{enumerate}
+\item CRC Press, \url{https://www.crcpress.com/}.  
+\item Elsevier, \url{https://www.elsevier.com/}
+\item No Starch Press, \url{https://www.nostarch.com/}.
+\item Springer, \url{http://www.springer.com/gp/}.
+\end{enumerate}
+
 
 \bibliographystyle{plainnat}
 \bibliography{PublishTeXManuscript}
